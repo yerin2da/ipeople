@@ -1,539 +1,769 @@
-<html lang="ko" style=""><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
-<meta http-equiv="imagetoolbar" content="no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>테스트</title>
-<link rel="stylesheet" href="http://test6.yyend.com/theme/ipeople/css/default.css?ver=2303229">
-<link rel="stylesheet" href="http://test6.yyend.com/js/font-awesome/css/font-awesome.min.css?ver=2303229">
-<link rel="stylesheet" href="http://test6.yyend.com/theme/ipeople/css/owl.carousel.css?ver=2303229">
-<link rel="stylesheet" href="http://test6.yyend.com/theme/ipeople/skin/content/ipeople_as/style.css?ver=2303229">
-<link rel="stylesheet" href="http://test6.yyend.com/theme/ipeople/skin/outlogin/basic/style.css?ver=2303229">
-<!--[if lte IE 8]>
-<script src="http://test6.yyend.com/js/html5.js"></script>
-<![endif]-->
-<script>
-// 자바스크립트에서 사용하는 전역변수 선언
-var g5_url       = "http://test6.yyend.com";
-var g5_bbs_url   = "http://test6.yyend.com/bbs";
-var g5_is_member = "";
-var g5_is_admin  = "";
-var g5_is_mobile = "";
-var g5_bo_table  = "";
-var g5_sca       = "";
-var g5_editor    = "";
-var g5_cookie_domain = "";
-</script>
-
-<!-- google font -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&amp;family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;family=Nanum+Gothic:wght@400;700;800&amp;family=Nanum+Myeongjo:wght@400;700;800&amp;display=swap" rel="stylesheet">
-
-<!-- G마켓 산스 font-->
-<link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
-
-<!-- bitcheese font -->
-<link href="https://fonts.cdnfonts.com/css/bitcheese" rel="stylesheet">
-
-<!-- xeicon -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
-<!-- swiper slider -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script src="http://test6.yyend.com/js/jquery-1.12.4.min.js?ver=2304171"></script>
-<script src="http://test6.yyend.com/js/jquery-migrate-1.4.1.min.js?ver=2304171"></script>
-<script src="http://test6.yyend.com/js/jquery.menu.js?ver=2304171"></script>
-<script src="http://test6.yyend.com/js/common.js?ver=2304171"></script>
-<script src="http://test6.yyend.com/js/wrest.js?ver=2304171"></script>
-<script src="http://test6.yyend.com/js/placeholders.min.js?ver=2304171"></script>
-<script src="http://test6.yyend.com/js/jquery.bxslider.js?ver=2304171"></script>
-<script src="http://test6.yyend.com/theme/ipeople/js/theme_common.js?ver=2304171"></script>
-<script src="http://test6.yyend.com/theme/ipeople/js/owl.carousel.js?ver=2304171"></script>
-</head>
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" style="">
-
-
-
-<!-- aos animation -->
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-	AOS.init();
-</script>
-<div id="hd" class="" style="">
-	
-    <h1 id="hd_h1">ipeople_as</h1>
-    <div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
-
-    	
-	
-    <div id="hd_wrapper">
-		<div class="header_wrap">
-			<div id="logo">
-				<a href="http://test6.yyend.com"><!--<img src="http://test6.yyend.com/theme/ipeople/images/white_logo.png" alt="테스트">--></a>
-
-			</div>
-			
-			
-		</div>
-      
-
-
-		<nav id="gnb">
-			<h2>메인메뉴</h2>
-			<div class="gnb_wrap">
-				<ul id="gnb_1dul">
-										<li class="gnb_1dli" style="z-index:999">
-						<a href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_as" target="_self" class="gnb_1da">A/S 안내</a>
-											</li>
-										<li class="gnb_1dli" style="z-index:998">
-						<a href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_service" target="_self" class="gnb_1da">서비스 안내</a>
-											</li>
-										<li class="gnb_1dli" style="z-index:997">
-						<a href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_location" target="_self" class="gnb_1da">찾아오시는 길</a>
-											</li>
-									</ul>
-				<div class="gnb_menu_wrap">
-					<button type="button" class="gnb_menu_btn" title="전체메뉴">
-						<div class="bars">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-						<span class="sound_only">전체메뉴열기</span>
-					</button>
-					<div id="gnb_all">
-						<h2 class="sound_only">전체메뉴</h2>
-						<div class="gnb_all_top">
-							<h2><a href="/"><i class="xi-home-o"></i> Home</a></h2>
-							<button type="button" class="gnb_close_btn"><i class="xi-close" aria-hidden="true"></i></button>
-						</div>
-						<ul class="gnb_al_ul">
-														<li class="gnb_al_li">
-								<a href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_as" target="_self" class="gnb_al_a">A/S 안내</a>
-															</li>
-														<li class="gnb_al_li">
-								<a href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_service" target="_self" class="gnb_al_a">서비스 안내</a>
-															</li>
-														<li class="gnb_al_li">
-								<a href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_location" target="_self" class="gnb_al_a">찾아오시는 길</a>
-															</li>
-													</ul>
-						<div class="gnb_all_bottom">
-							<h2>CS CENTER</h2>
-							<a href="#" class="call"><i class="xi-headset"></i> Tel. 010-2542-5961</a>
-							<!-- <p class="time"><span>운영시간.</span> AM 09:00 ~ PM 06:00</p> -->
-							<!-- <p class="mail"><span>E-mail.</span> webmaster@jujucoms.com</p> -->
-						</div>
-					</div>
-					<div id="gnb_all_bg"></div>
-				</div>
-			</div>
-		</nav>
-    </div><!-- //hd_wrapper -->
-	
-    
-    
+<html lang="ko" style="">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes" name="viewport"/>
+    <meta content="no" http-equiv="imagetoolbar"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <title>
+        테스트
+    </title>
+    <link href="http://test6.yyend.com/theme/ipeople/css/default.css?ver=2303229" rel="stylesheet"/>
+    <link href="http://test6.yyend.com/js/font-awesome/css/font-awesome.min.css?ver=2303229" rel="stylesheet"/>
+    <link href="http://test6.yyend.com/theme/ipeople/css/owl.carousel.css?ver=2303229" rel="stylesheet"/>
+    <link href="./ipeople_as/style.css" rel="stylesheet"/>
+    <link href="http://test6.yyend.com/theme/ipeople/skin/outlogin/basic/style.css?ver=2303229" rel="stylesheet"/>
+    <!--[if lte IE 8]>
+    <script src="http://test6.yyend.com/js/html5.js"></script>
+    <![endif]-->
     <script>
-		
-    $(function(){
-        $(".gnb_menu_btn").click(function(){
-            $("#gnb_all, #gnb_all_bg").show();
+        // 자바스크립트에서 사용하는 전역변수 선언
+        var g5_url       = "http://test6.yyend.com";
+        var g5_bbs_url   = "http://test6.yyend.com/bbs";
+        var g5_is_member = "";
+        var g5_is_admin  = "";
+        var g5_is_mobile = "";
+        var g5_bo_table  = "";
+        var g5_sca       = "";
+        var g5_editor    = "";
+        var g5_cookie_domain = "";
+    </script>
+    <!-- google font -->
+    <link href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&amp;family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;family=Nanum+Gothic:wght@400;700;800&amp;family=Nanum+Myeongjo:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+    <!-- G마켓 산스 font-->
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet"/>
+    <!-- bitcheese font -->
+    <link href="https://fonts.cdnfonts.com/css/bitcheese" rel="stylesheet"/>
+    <!-- xeicon -->
+    <link href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet"/>
+    <!-- swiper slider -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script src="http://test6.yyend.com/js/jquery-1.12.4.min.js?ver=2304171">
+    </script>
+    <script src="http://test6.yyend.com/js/jquery-migrate-1.4.1.min.js?ver=2304171">
+    </script>
+    <script src="http://test6.yyend.com/js/jquery.menu.js?ver=2304171">
+    </script>
+    <script src="http://test6.yyend.com/js/common.js?ver=2304171">
+    </script>
+    <script src="http://test6.yyend.com/js/wrest.js?ver=2304171">
+    </script>
+    <script src="http://test6.yyend.com/js/placeholders.min.js?ver=2304171">
+    </script>
+    <script src="http://test6.yyend.com/js/jquery.bxslider.js?ver=2304171">
+    </script>
+    <script src="http://test6.yyend.com/theme/ipeople/js/theme_common.js?ver=2304171">
+    </script>
+    <script src="http://test6.yyend.com/theme/ipeople/js/owl.carousel.js?ver=2304171">
+    </script>
+</head>
+<body data-aos-delay="0" data-aos-duration="400" data-aos-easing="ease" style="">
+<!-- aos animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+<script>
+    AOS.init();
+</script>
+<div class="" id="hd" style="">
+    <h1 id="hd_h1">
+        ipeople_as
+    </h1>
+    <div id="skip_to_container">
+        <a href="#container">
+            본문 바로가기
+        </a>
+    </div>
+    <div id="hd_wrapper">
+        <div class="header_wrap">
+            <div id="logo">
+                <a href="http://test6.yyend.com">
+                    <!--<img src="http://test6.yyend.com/theme/ipeople/images/white_logo.png" alt="테스트">-->
+                </a>
+            </div>
+        </div>
+        <nav id="gnb">
+            <h2>
+                메인메뉴
+            </h2>
+            <div class="gnb_wrap">
+                <ul id="gnb_1dul">
+                    <li class="gnb_1dli" style="z-index:999">
+                        <a class="gnb_1da" href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_as" target="_self">
+                            A/S 안내
+                        </a>
+                    </li>
+                    <li class="gnb_1dli" style="z-index:998">
+                        <a class="gnb_1da" href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_service" target="_self">
+                            서비스 안내
+                        </a>
+                    </li>
+                    <li class="gnb_1dli" style="z-index:997">
+                        <a class="gnb_1da" href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_location" target="_self">
+                            찾아오시는 길
+                        </a>
+                    </li>
+                </ul>
+                <div class="gnb_menu_wrap">
+                    <button class="gnb_menu_btn" title="전체메뉴" type="button">
+                        <div class="bars">
+         <span>
+         </span>
+                            <span>
+         </span>
+                            <span>
+         </span>
+                        </div>
+                        <span class="sound_only">
+         전체메뉴열기
+        </span>
+                    </button>
+                    <div id="gnb_all">
+                        <h2 class="sound_only">
+                            전체메뉴
+                        </h2>
+                        <div class="gnb_all_top">
+                            <h2>
+                                <a href="/">
+                                    <i class="xi-home-o">
+                                    </i>
+                                    Home
+                                </a>
+                            </h2>
+                            <button class="gnb_close_btn" type="button">
+                                <i aria-hidden="true" class="xi-close">
+                                </i>
+                            </button>
+                        </div>
+                        <ul class="gnb_al_ul">
+                            <li class="gnb_al_li">
+                                <a class="gnb_al_a" href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_as" target="_self">
+                                    A/S 안내
+                                </a>
+                            </li>
+                            <li class="gnb_al_li">
+                                <a class="gnb_al_a" href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_service" target="_self">
+                                    서비스 안내
+                                </a>
+                            </li>
+                            <li class="gnb_al_li">
+                                <a class="gnb_al_a" href="http://test6.yyend.com/bbs/content.php?co_id=ipeople_location" target="_self">
+                                    찾아오시는 길
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="gnb_all_bottom">
+                            <h2>
+                                CS CENTER
+                            </h2>
+                            <a class="call" href="#">
+                                <i class="xi-headset">
+                                </i>
+                                Tel. 010-2542-5961
+                            </a>
+                            <!-- <p class="time"><span>운영시간.</span> AM 09:00 ~ PM 06:00</p> -->
+                            <!-- <p class="mail"><span>E-mail.</span> webmaster@jujucoms.com</p> -->
+                        </div>
+                    </div>
+                    <div id="gnb_all_bg">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- //hd_wrapper -->
+    <script>
+        $(function(){
+            $(".gnb_menu_btn").click(function(){
+                $("#gnb_all, #gnb_all_bg").show();
+            });
+            $(".gnb_close_btn, #gnb_all_bg").click(function(){
+                $("#gnb_all, #gnb_all_bg").hide();
+            });
         });
-        $(".gnb_close_btn, #gnb_all_bg").click(function(){
-            $("#gnb_all, #gnb_all_bg").hide();
+
+        $(function(){
+            $(".slide_down").click(function(){
+                var slidedown = $(".slide_down");
+                slidedown.not($(this)).removeClass('active').siblings("ul").stop().slideUp('fast');
+                $(this).toggleClass('active').siblings("ul").slideToggle('fast');
+            });
         });
-    });
-
-	$(function(){
-		$(".slide_down").click(function(){
-			var slidedown = $(".slide_down");
-			slidedown.not($(this)).removeClass('active').siblings("ul").stop().slideUp('fast');
-			$(this).toggleClass('active').siblings("ul").slideToggle('fast');
-		});
-	});
-
     </script>
 </div>
 <!-- } 상단 끝 -->
-
-
-<hr>
-
+<hr/>
 <!-- 콘텐츠 시작 { -->
 <div id="wrapper">
+    <!-- 게시판일때 -->
+    <!-- 내용관리일때 -->
+    <div class="top" id="container_title" style="background-image: url(ipeople_as/img/top_img.jpg);">
+    <span class="aos-init aos-animate" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" title="ipeople_as">
+     ipeople_as
+    </span>
+    </div>
+    <script>
+        $(document).ready(function(){
 
 
-		<!-- 게시판일때 -->
-		
-		<!-- 내용관리일때 -->
-					<div id="container_title" class="top" style="background-image: url(&quot;http://test6.yyend.com/theme/ipeople/skin/content/ipeople_as/img/top_img.jpg&quot;);">
-				<span data-aos-duration="1000" data-aos-delay="200" title="ipeople_as" class="aos-init aos-animate" data-aos="fade-down">ipeople_as</span>
-			</div>
-		
+            $('.gnb_1dli > a').mouseover(function(){
+                if($(this).text() == 'PHARVIS HK'){
+                    $(this).text('가나다')
+                }else if($(this).text() == 'PRODUCT'){
+                    $(this).text('제품')
+                }else if($(this).text() == 'MEDIA INFO'){
+                    $(this).text('미디어')
+                }else if($(this).text() == 'COMMUNITY'){
+                    $(this).text('커뮤니티')
+                }
+            });
 
-<script>
-$(document).ready(function(){
-	
+            $('.gnb_1dli > a').mouseout(function(){
+                if($(this).text() == '파비스에이치케이'){
+                    $(this).text('PHARVIS HK')
+                }else if($(this).text() == '제품'){
+                    $(this).text('PRODUCT')
+                }else if($(this).text() == '미디어'){
+                    $(this).text('MEDIA INFO')
+                }else if($(this).text() == '커뮤니티'){
+                    $(this).text('COMMUNITY')
+                }
+            });
 
-	$('.gnb_1dli > a').mouseover(function(){
-		if($(this).text() == 'PHARVIS HK'){
-			$(this).text('가나다')
-		}else if($(this).text() == 'PRODUCT'){
-			$(this).text('제품')
-		}else if($(this).text() == 'MEDIA INFO'){
-			$(this).text('미디어')
-		}else if($(this).text() == 'COMMUNITY'){
-			$(this).text('커뮤니티')
-		}
-	});
-
-	$('.gnb_1dli > a').mouseout(function(){
-		if($(this).text() == '파비스에이치케이'){
-			$(this).text('PHARVIS HK')
-		}else if($(this).text() == '제품'){
-			$(this).text('PRODUCT')
-		}else if($(this).text() == '미디어'){
-			$(this).text('MEDIA INFO')
-		}else if($(this).text() == '커뮤니티'){
-			$(this).text('COMMUNITY')
-		}
-	});
-
-});
-</script>
-
-
-
-<!-- 아이콘 폰트 주소-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-
-<article id="ctt" class="ctt_ipeople_as">
-    <header>
-        <h1>ipeople_as</h1>
-    </header>
-
-    <div id="ctt_con">
-        <!-- <p>ipeople_as<br /></p> -->
-        <!-- 여기부터 -->
-        
-        <div class="section1">
-            <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 434px;"><div class="slide_wrap" style="width: auto; position: relative;">
-                <div class="bg_area slide1" style="background-image: url(&quot;http://test6.yyend.com/theme/ipeople/skin/content/ipeople_as/img/as_bg3.png&quot;); float: none; list-style: none; position: absolute; width: 1314px; z-index: 0; display: none;">
-                    <div class="inner">
-                        <div class="con_wrap">
-                            <!-- 여기부터 내용 내용쓰기-->
-                            <div class="text"><span>합리적인 가격</span>과 <span>최고의 기술력</span> I PEOPLE 서비스</div>
-                        </div><!-- con_wrap end-->
-                    </div><!-- inner end -->
-                </div><!-- bg_area end -->
-                <div class="bg_area slide2 active" style="background-image: url(&quot;http://test6.yyend.com/theme/ipeople/skin/content/ipeople_as/img/as_bg.png&quot;); float: none; list-style: none; position: absolute; width: 1314px; z-index: 50; display: block;">
-                    <div class="inner">
-                        <div class="con_wrap">
-                            <!-- 여기부터 내용 내용쓰기-->
-                            <div class="text"><span>합리적인 가격</span>과 <span>최고의 기술력</span> I PEOPLE 서비스</div>
-                        </div><!-- con_wrap end-->
-                    </div><!-- inner end -->
-                </div><!-- bg_area end -->
-            </div></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
-            
-        </div><!-- section1 end -->
-<script>
-    $(document).ready(function(){
-        $('.slide_wrap').bxSlider({
-		    onSliderLoad: function($slideElement){
-			$('.bg_area').eq(0).addClass('active')
-			$(".move01").addClass('on aos-animate');
-			$(".move02").addClass('on aos-animate');
-			$(".move03").addClass('on aos-animate');
-		},
-		onSlideBefore: function($slideElement){
-			$(".move01").removeClass('on aos-animate');
-			$(".move02").removeClass('on aos-animate');
-			$(".move03").removeClass('on aos-animate');
-		},
-		onSlideAfter: function($slideElement){
-			$slideElement.addClass('active').siblings().removeClass('active');
-			$(".move01").addClass('on aos-animate');
-			$(".move02").addClass('on aos-animate');
-			$(".move03").addClass('on aos-animate');
-		},
-		mode:'fade',
-		auto:true,
-		autoControls:false,
-		speed:500,
-		pager:false,
-		touchEnabled:true,
-		pause:8000
-	});
-});
-</script>
-
-        <div class="section2">
-            <div class="inner">
-                <div class="con_wrap">
-                    <div class="title aos-init aos-animate" data-aos-duration="1500" data-aos="fade-up">
-                        A/S 안내
-                    </div><!-- title end--->
-                    <ul class="icon_wrap">
-                        <li data-aos-duration="800" data-aos-delay="200" class="aos-init aos-animate" data-aos="fade-up">
-                            <div class="img_wrap" style="background-image:url('http://test6.yyend.com/theme/ipeople/skin/content/ipeople_as/img/as_icon1.png')">
-                            </div>
-                            <div class="text_wrap aos-init aos-animate" data-aos-duration="800" data-aos-delay="300" data-aos="fade-up">
-                                <div class="tit">방문접수</div>
-                                <div class="txt">
-                                    회사방문<span class="comma">, </span><br class="br_890">
-                                    상태/견적 상담<span class="comma">, </span><br class="br_890">
-                                    1:1 대면 수리
+        });
+    </script>
+    <!-- 아이콘 폰트 주소-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <article class="ctt_ipeople_as" id="ctt">
+        <header>
+            <h1>
+                ipeople_as
+            </h1>
+        </header>
+        <div id="ctt_con">
+            <!-- <p>ipeople_as<br /></p> -->
+            <!-- 여기부터 -->
+            <div class="section1">
+                <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
+                    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 434px;">
+                        <div class="slide_wrap" style="width: auto; position: relative;">
+                            <div class="bg_area slide1" style="background-image: url(ipeople_as/img/as_bg3.png); float: none; list-style: none; position: absolute; width: 1314px; z-index: 0; display: none;">
+                                <div class="inner">
+                                    <div class="con_wrap">
+                                        <!-- 여기부터 내용 내용쓰기-->
+                                        <div class="text">
+             <span>
+              합리적인 가격
+             </span>
+                                            과
+                                            <span>
+              최고의 기술력
+             </span>
+                                            I PEOPLE 서비스
+                                        </div>
+                                    </div>
+                                    <!-- con_wrap end-->
                                 </div>
+                                <!-- inner end -->
                             </div>
-                        </li>
-                        <li data-aos-duration="800" data-aos-delay="400" class="aos-init aos-animate" data-aos="fade-up">
-                            <div class="img_wrap" style="background-image:url('http://test6.yyend.com/theme/ipeople/skin/content/ipeople_as/img/as_icon2_2.png')">
-                            </div>
-                            <div class="text_wrap aos-init aos-animate" data-aos-duration="800" data-aos-delay="400" data-aos="fade-up">
-                                <div class="tit">전화예약</div>
-                                <div class="txt">
-                                    방문 전 전화예약<span class="comma">, </span><br class="br_890">
-                                    상태/견적 상담<span class="comma">, </span><br class="br_890">
-                                    1:1 대면 수리
+                            <!-- bg_area end -->
+                            <div class="bg_area slide2 active" style="background-image: url(ipeople_as/img/as_bg.png); float: none; list-style: none; position: absolute; width: 1314px; z-index: 50; display: block;">
+                                <div class="inner">
+                                    <div class="con_wrap">
+                                        <!-- 여기부터 내용 내용쓰기-->
+                                        <div class="text">
+             <span>
+              합리적인 가격
+             </span>
+                                            과
+                                            <span>
+              최고의 기술력
+             </span>
+                                            I PEOPLE 서비스
+                                        </div>
+                                    </div>
+                                    <!-- con_wrap end-->
                                 </div>
+                                <!-- inner end -->
                             </div>
-                        </li>
-                        <li data-aos-duration="800" data-aos-delay="600" class="aos-init aos-animate" data-aos="fade-up">
-                            <div class="img_wrap" style="background-image:url('http://test6.yyend.com/theme/ipeople/skin/content/ipeople_as/img/as_icon3.png')">
-                            </div>
-                            <div class="text_wrap aos-init aos-animate" data-aos-duration="800" data-aos-delay="500" data-aos="fade-up">
-                                <div class="tit">택배 및 퀵접수</div>
-                                <div class="txt">
-                                    전화문의<span class="comma">, </span><br class="br_890">
-                                    택배접수(고객부담)<span class="comma">, </span><br class="br_890">
-                                    상태/견적 통보 및 수리<span class="comma">, </span><br class="br_890">
-                                    제품발송(회사부담)
+                            <!-- bg_area end -->
+                        </div>
+                    </div>
+                    <div class="bx-controls bx-has-controls-direction">
+                        <div class="bx-controls-direction">
+                            <a class="bx-prev" href="">
+                                Prev
+                            </a>
+                            <a class="bx-next" href="">
+                                Next
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section1 end -->
+            <script>
+                $(document).ready(function(){
+                    $('.slide_wrap').bxSlider({
+                        onSliderLoad: function ($slideElement) {
+                            $('.bg_area').eq(0).addClass('active')
+                            $(".move01").addClass('on aos-animate');
+                            $(".move02").addClass('on aos-animate');
+                            $(".move03").addClass('on aos-animate');
+                        },
+                        onSlideBefore: function ($slideElement) {
+                            $(".move01").removeClass('on aos-animate');
+                            $(".move02").removeClass('on aos-animate');
+                            $(".move03").removeClass('on aos-animate');
+                        },
+                        onSlideAfter: function ($slideElement) {
+                            $slideElement.addClass('active').siblings().removeClass('active');
+                            $(".move01").addClass('on aos-animate');
+                            $(".move02").addClass('on aos-animate');
+                            $(".move03").addClass('on aos-animate');
+                        },
+                        mode: 'fade',
+                        auto: true,
+                        autoControls: false,
+                        speed: 500,
+                        pager: false,
+                        touchEnabled: true,
+                        pause: 8000
+                    });
+                });
+            </script>
+            <div class="section2">
+                <div class="inner">
+                    <div class="con_wrap">
+                        <div class="title aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
+                            A/S 안내
+                        </div>
+                        <!-- title end--->
+                        <ul class="icon_wrap">
+                            <li class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
+                                data-aos-duration="800">
+                                <div class="img_wrap" style="background-image:url(ipeople_as/img/as_icon1.png)">
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="caution">
-                        <div class="text aos-init" data-aos-duration="800" data-aos-delay="100" data-aos="fade-up"><span class="red">※</span> 택배 보내실 주소</div>
-                        <ul class="branch">
-                            <li>
-                                <div class="tit aos-init" data-aos-duration="800" data-aos-delay="200" data-aos="fade-up"><i class="fa-solid fa-location-dot"></i> 용문점</div>
-                                <div class="txt1 aos-init" data-aos-duration="800" data-aos-delay="250" data-aos="fade-up">대전 서구 탄방동 81-18번지 정일빌딩 2층 203호</div>
-                                <div class="txt3 aos-init" data-aos-duration="800" data-aos-delay="300" data-aos="fade-up">010-2542-5961</div>
-                                <div class="txt2 aos-init" data-aos-duration="800" data-aos-delay="350" data-aos="fade-up"><span class="red">아이폰 / 아이패드 / 애플워치 일반 PC</span> 조립 및 전문 수리</div>
+                                <div class="text_wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"
+                                     data-aos-duration="800">
+                                    <div class="tit">
+                                        방문접수
+                                    </div>
+                                    <div class="txt">
+                                        회사방문
+                                        <span class="comma">
+             ,
+            </span>
+                                        <br class="br_890"/>
+                                        상태/견적 상담
+                                        <span class="comma">
+             ,
+            </span>
+                                        <br class="br_890"/>
+                                        1:1 대면 수리
+                                    </div>
+                                </div>
                             </li>
-                            <li>
-                                <div class="tit aos-init" data-aos-duration="800" data-aos-delay="400" data-aos="fade-up"><i class="fa-solid fa-location-dot"></i> 유성점</div>
-                                <div class="txt1 aos-init" data-aos-duration="800" data-aos-delay="450" data-aos="fade-up">대전 유성구 대학로 31 한진리조트오피스텔 1406호</div>
-                                <div class="txt3 aos-init" data-aos-duration="800" data-aos-delay="500" data-aos="fade-up">010-8244-5961</div>
-                                <div class="txt2 aos-init" data-aos-duration="800" data-aos-delay="550" data-aos="fade-up"><span class="red">맥북 / 아이패드 / 아이폰</span>전문 수리</div>
+                            <li class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                                data-aos-duration="800">
+                                <div class="img_wrap" style="background-image:url(ipeople_as/img/as_icon2_2.png)">
+                                </div>
+                                <div class="text_wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                                     data-aos-duration="800">
+                                    <div class="tit">
+                                        전화예약
+                                    </div>
+                                    <div class="txt">
+                                        방문 전 전화예약
+                                        <span class="comma">
+             ,
+            </span>
+                                        <br class="br_890"/>
+                                        상태/견적 상담
+                                        <span class="comma">
+             ,
+            </span>
+                                        <br class="br_890"/>
+                                        1:1 대면 수리
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="600"
+                                data-aos-duration="800">
+                                <div class="img_wrap" style="background-image:url(ipeople_as/img/as_icon3.png)">
+                                </div>
+                                <div class="text_wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="500"
+                                     data-aos-duration="800">
+                                    <div class="tit">
+                                        택배 및 퀵접수
+                                    </div>
+                                    <div class="txt">
+                                        전화문의
+                                        <span class="comma">
+             ,
+            </span>
+                                        <br class="br_890"/>
+                                        택배접수(고객부담)
+                                        <span class="comma">
+             ,
+            </span>
+                                        <br class="br_890"/>
+                                        상태/견적 통보 및 수리
+                                        <span class="comma">
+             ,
+            </span>
+                                        <br class="br_890"/>
+                                        제품발송(회사부담)
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-                    </div>
-                </div><!-- con_wrap end-->
-            </div><!-- inner end -->
-        </div><!-- section2 end -->
-
-        <div class="section3" id="as_cost">
-            <div class="inner">
-                <div class="con_wrap">
-                    <div class="title aos-init" data-aos-duration="1500" data-aos="fade-up">
-                        수리 가격
-                    </div><!-- title end--->
-                    <div class="table aos-init" data-aos-duration="1500" data-aos="fade-up">
-                        <div class="box1">
-                            <div class="tit">
-                                <div class="i_tit aos-init" data-aos-duration="1500" data-aos="fade-up">i Phone</div>
+                        <div class="caution">
+                            <div class="text aos-init" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+          <span class="red">
+           ※
+          </span>
+                                택배 보내실 주소
                             </div>
-                            <ul class="txt1">
-                                <li>액정</li>
-                                <li>배터리</li>
-                                <li>침수, 복원 클리닝</li>
-                                <li>메모리 업그레이드</li>
-                                <li class="bd2">후면 유리 교체</li>
-                            </ul>
-                            <ul class="txt2">
-                                <li>협의</li>
-                                <li>협의</li>
-                                <li>협의</li>
-                                <li>협의</li>
-                                <li class="bd2">협의</li>
+                            <ul class="branch">
+                                <li>
+                                    <div class="tit aos-init" data-aos="fade-up" data-aos-delay="200"
+                                         data-aos-duration="800">
+                                        <i class="fa-solid fa-location-dot">
+                                        </i>
+                                        용문점
+                                    </div>
+                                    <div class="txt1 aos-init" data-aos="fade-up" data-aos-delay="250"
+                                         data-aos-duration="800">
+                                        대전 서구 탄방동 81-18번지 정일빌딩 2층 203호
+                                    </div>
+                                    <div class="txt3 aos-init" data-aos="fade-up" data-aos-delay="300"
+                                         data-aos-duration="800">
+                                        010-2542-5961
+                                    </div>
+                                    <div class="txt2 aos-init" data-aos="fade-up" data-aos-delay="350"
+                                         data-aos-duration="800">
+            <span class="red">
+             아이폰 / 아이패드 / 애플워치 일반 PC
+            </span>
+                                        조립 및 전문 수리
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tit aos-init" data-aos="fade-up" data-aos-delay="400"
+                                         data-aos-duration="800">
+                                        <i class="fa-solid fa-location-dot">
+                                        </i>
+                                        유성점
+                                    </div>
+                                    <div class="txt1 aos-init" data-aos="fade-up" data-aos-delay="450"
+                                         data-aos-duration="800">
+                                        대전 유성구 대학로 31 한진리조트오피스텔 1406호
+                                    </div>
+                                    <div class="txt3 aos-init" data-aos="fade-up" data-aos-delay="500"
+                                         data-aos-duration="800">
+                                        010-8244-5961
+                                    </div>
+                                    <div class="txt2 aos-init" data-aos="fade-up" data-aos-delay="550"
+                                         data-aos-duration="800">
+            <span class="red">
+             맥북 / 아이패드 / 아이폰
+            </span>
+                                        전문 수리
+                                    </div>
+                                </li>
                             </ul>
                         </div>
-                        <div class="box2">
-                            <div class="tit">
-                                <div class="i_tit aos-init" data-aos-duration="1500" data-aos="fade-up">i Pad</div>
-                                
-                            </div>
-                            <ul class="txt1">
-                                <li>액정</li>
-                                <li>LCD 교체</li>
-                                <li class="bd2">배터리</li>
-                            </ul>
-                            <ul class="txt2">
-                                <li>협의</li>
-                                <li>협의</li>
-                                <li class="bd2">협의</li>
-                            </ul>
-                        </div>
-                        <div class="box3">
-                            <div class="tit bdn">
-                                <div class="i_tit aos-init" data-aos-duration="1500" data-aos="fade-up">Mac</div>
-                                
-                            </div>
-                            <ul class="txt1">
-                                <li>맥북 윈도우 시스템 설치</li>
-                                <li>침수, 복원 클리닝</li>
-                                <li>키보드 교체, 수리</li>
-                                <li>파워보드 교체</li>
-                                <li>내장마이크 및 스피커 교체, 수리</li>
-                                <li class="bdn">케이블 등 소모품 교체</li>
-                            </ul>
-                            <ul class="txt2">
-                                <li>협의</li>
-                                <li>협의</li>
-                                <li>협의</li>
-                                <li>협의</li>
-                                <li>협의</li>
-                                <li class="bdn">협의</li>
-                            </ul>
-                        </div>
-                        
                     </div>
-
-                    <div class="caution1">
-                        <div class="text aos-init" data-aos-duration="800" data-aos="fade-up"><span class="red">※</span> 정품 보증기간 100일 <span class="text2">(단, 고객과실 파손 침수는 제외)</span></div>
-                        <!-- <div class="text2"data-aos="fade-up"  data-aos-duration="800">(단, 고객과실 파손 침수는 제외)</div> -->
-                    </div>
-                    <div class="caution2">
-                        <div class="text aos-init" data-aos-duration="800" data-aos="fade-up"><span class="red">※</span> 방문전 전화문의 필수</div>
-                    </div>
-                </div><!-- con_wrap end-->
-            </div><!-- inner end -->
-        </div><!-- section2 end -->
-
-
-    </div><!-- ctt_con -->
-
-</article>
-    </div>
-    <div id="aside">
-        
-<!-- 로그인 전 아웃로그인 시작 { -->
-<section id="ol_before" class="ol">
-	<div id="ol_be_cate">
-    	<h2><span class="sound_only">회원</span>로그인</h2>
-    	<a href="http://test6.yyend.com/bbs/register.php" class="join">회원가입</a>
-    </div>
-    <form name="foutlogin" action="http://test6.yyend.com/bbs/login_check.php" onsubmit="return fhead_submit(this);" method="post" autocomplete="off">
-    <fieldset>
-        <div class="ol_wr">
-            <input type="hidden" name="url" value="%2Fbbs%2Fcontent.php%3Fco_id%3Dipeople_as">
-            <label for="ol_id" id="ol_idlabel" class="sound_only ol_idlabel">회원아이디<strong>필수</strong></label>
-            <input type="text" id="ol_id" name="mb_id" required="" maxlength="20" placeholder="아이디">
-            <label for="ol_pw" id="ol_pwlabel" class="sound_only ol_pwlabel">비밀번호<strong>필수</strong></label>
-            <input type="password" name="mb_password" id="ol_pw" required="" maxlength="20" placeholder="비밀번호">
-            <input type="submit" id="ol_submit" value="로그인" class="btn_b02">
-        </div>
-        <div class="ol_auto_wr"> 
-            <div id="ol_auto" class="chk_box">
-                <input type="checkbox" name="auto_login" value="1" id="auto_login" class="selec_chk">
-                <label for="auto_login" id="auto_login_label"><span></span>자동로그인</label>
+                    <!-- con_wrap end-->
+                </div>
+                <!-- inner end -->
             </div>
-            <div id="ol_svc">
-                <a href="http://test6.yyend.com/bbs/password_lost.php" id="ol_password_lost">정보찾기</a>
+            <!-- section2 end -->
+            <div class="section3" id="as_cost">
+                <div class="inner">
+                    <div class="con_wrap">
+                        <div class="title aos-init" data-aos="fade-up" data-aos-duration="1500">
+                            수리 가격
+                        </div>
+                        <!-- title end--->
+                        <div class="table aos-init" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="box1">
+                                <div class="tit">
+                                    <div class="i_tit aos-init" data-aos="fade-up" data-aos-duration="1500">
+                                        i Phone
+                                    </div>
+                                </div>
+                                <ul class="txt1">
+                                    <li>
+                                        액정
+                                    </li>
+                                    <li>
+                                        배터리
+                                    </li>
+                                    <li>
+                                        침수, 복원 클리닝
+                                    </li>
+                                    <li>
+                                        메모리 업그레이드
+                                    </li>
+                                    <li class="bd2">
+                                        후면 유리 교체
+                                    </li>
+                                </ul>
+                                <ul class="txt2">
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li class="bd2">
+                                        협의
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box2">
+                                <div class="tit">
+                                    <div class="i_tit aos-init" data-aos="fade-up" data-aos-duration="1500">
+                                        i Pad
+                                    </div>
+                                </div>
+                                <ul class="txt1">
+                                    <li>
+                                        액정
+                                    </li>
+                                    <li>
+                                        LCD 교체
+                                    </li>
+                                    <li class="bd2">
+                                        배터리
+                                    </li>
+                                </ul>
+                                <ul class="txt2">
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li class="bd2">
+                                        협의
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box3">
+                                <div class="tit bdn">
+                                    <div class="i_tit aos-init" data-aos="fade-up" data-aos-duration="1500">
+                                        Mac
+                                    </div>
+                                </div>
+                                <ul class="txt1">
+                                    <li>
+                                        맥북 윈도우 시스템 설치
+                                    </li>
+                                    <li>
+                                        침수, 복원 클리닝
+                                    </li>
+                                    <li>
+                                        키보드 교체, 수리
+                                    </li>
+                                    <li>
+                                        파워보드 교체
+                                    </li>
+                                    <li>
+                                        내장마이크 및 스피커 교체, 수리
+                                    </li>
+                                    <li class="bdn">
+                                        케이블 등 소모품 교체
+                                    </li>
+                                </ul>
+                                <ul class="txt2">
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li>
+                                        협의
+                                    </li>
+                                    <li class="bdn">
+                                        협의
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="caution1">
+                            <div class="text aos-init" data-aos="fade-up" data-aos-duration="800">
+          <span class="red">
+           ※
+          </span>
+                                정품 보증기간 100일
+                                <span class="text2">
+           (단, 고객과실 파손 침수는 제외)
+          </span>
+                            </div>
+                            <!-- <div class="text2"data-aos="fade-up"  data-aos-duration="800">(단, 고객과실 파손 침수는 제외)</div> -->
+                        </div>
+                        <div class="caution2">
+                            <div class="text aos-init" data-aos="fade-up" data-aos-duration="800">
+          <span class="red">
+           ※
+          </span>
+                                방문전 전화문의 필수
+                            </div>
+                        </div>
+                    </div>
+                    <!-- con_wrap end-->
+                </div>
+                <!-- inner end -->
             </div>
+            <!-- section2 end -->
         </div>
-        
-    </fieldset>
-    </form>
-</section>
+        <!-- ctt_con -->
+    </article>
+</div>
+<div id="aside">
+    <!-- 로그인 전 아웃로그인 시작 { -->
+    <section class="ol" id="ol_before">
+        <div id="ol_be_cate">
+            <h2>
+      <span class="sound_only">
+       회원
+      </span>
+                로그인
+            </h2>
+            <a class="join" href="http://test6.yyend.com/bbs/register.php">
+                회원가입
+            </a>
+        </div>
+        <form action="http://test6.yyend.com/bbs/login_check.php" autocomplete="off" method="post" name="foutlogin"
+              onsubmit="return fhead_submit(this);">
+            <fieldset>
+                <div class="ol_wr">
+                    <input name="url" type="hidden" value="%2Fbbs%2Fcontent.php%3Fco_id%3Dipeople_as"/>
+                    <label class="sound_only ol_idlabel" for="ol_id" id="ol_idlabel">
+                        회원아이디
+                        <strong>
+                            필수
+                        </strong>
+                    </label>
+                    <input id="ol_id" maxlength="20" name="mb_id" placeholder="아이디" required="" type="text"/>
+                    <label class="sound_only ol_pwlabel" for="ol_pw" id="ol_pwlabel">
+                        비밀번호
+                        <strong>
+                            필수
+                        </strong>
+                    </label>
+                    <input id="ol_pw" maxlength="20" name="mb_password" placeholder="비밀번호" required="" type="password"/>
+                    <input class="btn_b02" id="ol_submit" type="submit" value="로그인"/>
+                </div>
+                <div class="ol_auto_wr">
+                    <div class="chk_box" id="ol_auto">
+                        <input class="selec_chk" id="auto_login" name="auto_login" type="checkbox" value="1"/>
+                        <label for="auto_login" id="auto_login_label">
+         <span>
+         </span>
+                            자동로그인
+                        </label>
+                    </div>
+                    <div id="ol_svc">
+                        <a href="http://test6.yyend.com/bbs/password_lost.php" id="ol_password_lost">
+                            정보찾기
+                        </a>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <script>
+        jQuery(function ($) {
 
-<script>
-jQuery(function($) {
+            var $omi = $('#ol_id'),
+                $omp = $('#ol_pw'),
+                $omi_label = $('#ol_idlabel'),
+                $omp_label = $('#ol_pwlabel');
 
-    var $omi = $('#ol_id'),
-        $omp = $('#ol_pw'),
-        $omi_label = $('#ol_idlabel'),
-        $omp_label = $('#ol_pwlabel');
+            $omi_label.addClass('ol_idlabel');
+            $omp_label.addClass('ol_pwlabel');
 
-    $omi_label.addClass('ol_idlabel');
-    $omp_label.addClass('ol_pwlabel');
+            $("#auto_login").click(function () {
+                if ($(this).is(":checked")) {
+                    if (!confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?"))
+                        return false;
+                }
+            });
+        });
 
-    $("#auto_login").click(function(){
-        if ($(this).is(":checked")) {
-            if(!confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?"))
-                return false;
+        function fhead_submit(f) {
+            if ($(document.body).triggerHandler('outlogin1', [f, 'foutlogin']) !== false) {
+                return true;
+            }
+            return false;
         }
-    });
-});
-
-function fhead_submit(f)
-{
-    if( $( document.body ).triggerHandler( 'outlogin1', [f, 'foutlogin'] ) !== false ){
-        return true;
-    }
-    return false;
-}
-</script>
-<!-- } 로그인 전 아웃로그인 끝 -->
-            </div>
-
-
-
+    </script>
+    <!-- } 로그인 전 아웃로그인 끝 -->
+</div>
 <!-- } 콘텐츠 끝 -->
-
-<hr>
-
+<hr/>
 <!-- 하단 시작 { -->
 <footer>
     <div class="f_wrap">
-         <a href="#container" title="메인페이지 바로가기">
-        <img src="http://test6.yyend.com/theme/ipeople/img/footer_logo.png" alt="하단로고">
-    </a>
-	
-	<ul class="f_right">
-		<li>대전 서구 탄방동 81-18번지 정일빌딩 2층 203호<br class="br_600"> 대표 : 전광일  Tel. 010-2542-5961 <br>사업자등록번호 : 590-64-00072<br class="br_600"> 통신판매 : 제2015-대전서구-0578호 </li>
-		<li class="copy">© 아이폰수리아이피플. All Rights Reserved.</li>
-	</ul>
+        <a href="#container" title="메인페이지 바로가기">
+            <img alt="하단로고" src="http://test6.yyend.com/theme/ipeople/img/footer_logo.png"/>
+        </a>
+        <ul class="f_right">
+            <li>
+                대전 서구 탄방동 81-18번지 정일빌딩 2층 203호
+                <br class="br_600"/>
+                대표 : 전광일 Tel. 010-2542-5961
+                <br/>
+                사업자등록번호 : 590-64-00072
+                <br class="br_600"/>
+                통신판매 : 제2015-대전서구-0578호
+            </li>
+            <li class="copy">
+                © 아이폰수리아이피플. All Rights Reserved.
+            </li>
+        </ul>
     </div>
-   
 </footer>
-
-
 <!-- } 하단 끝 -->
-
 <script>
-$(function() {
-    // 폰트 리사이즈 쿠키있으면 실행
-    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
-});
+    $(function () {
+        // 폰트 리사이즈 쿠키있으면 실행
+        font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+    });
 </script>
-
-
-
 <!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
 <!--[if lte IE 7]>
 <script>
-$(function() {
-    var $sv_use = $(".sv_use");
-    var count = $sv_use.length;
+    $(function () {
+        var $sv_use = $(".sv_use");
+        var count = $sv_use.length;
 
-    $sv_use.each(function() {
-        $(this).css("z-index", count);
-        $(this).css("position", "relative");
-        count = count - 1;
+        $sv_use.each(function () {
+            $(this).css("z-index", count);
+            $(this).css("position", "relative");
+            count = count - 1;
+        });
     });
-});
 </script>
 <![endif]-->
-
-
-
-
-</body></html>
+</body>
+</html>
